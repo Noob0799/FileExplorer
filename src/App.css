@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.folder-container {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.folder-parent {
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.folder-parent-name {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.create-folder-container {
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: grey;
+  border-radius: 5px;
+  width: 350px;
+  display: flex;
+  gap: 10px;
+}
+
+.create-folder-input,
+.edit-folder-input {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  padding: 0 5px;
+}
+
+.folder-parent-btn-container {
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.folder-children {
+  margin-left: 20px;
+}
+
+.hide {
+  display: none;
 }

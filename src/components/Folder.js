@@ -130,12 +130,18 @@ function Folder({ folder, addNewSubFolder, editFolder, deleteFolder }) {
             <span>
               <i className="fa-solid fa-trash delete-folder"></i>
             </span>
-            <span>
-              <i className="fa-solid fa-folder-plus add-folder"></i>
-            </span>
-            <span>
-              <i className="fa-solid fa-file-circle-plus add-file"></i>
-            </span>
+            {
+              folder.isFolder && (
+                <>
+                  <span>
+                    <i className="fa-solid fa-folder-plus add-folder"></i>
+                  </span>
+                  <span>
+                    <i className="fa-solid fa-file-circle-plus add-file"></i>
+                  </span>
+                </>
+              )
+            }
           </div>
         </div>
         <div
